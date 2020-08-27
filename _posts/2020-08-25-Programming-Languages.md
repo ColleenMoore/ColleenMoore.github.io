@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Blog Post
+title: Programming Languages
 ---
 
 ## My Opinion of R vs. SAS
