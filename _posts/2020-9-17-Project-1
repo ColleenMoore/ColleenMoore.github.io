@@ -1,0 +1,44 @@
+## The Main Objectives
+The main objective of Project 1 was to create functions to contact two different APIs, and then preform a basic exploratory data analysis of the data returned. A second objective was to get more comfortable using github. 
+
+The two API’s contacted in this project were the:
+
+•	[NHL records API]( https://gitlab.com/dword4/nhlapi/-/blob/master/records-api.md) 
+•	[NHL stats API]( https://gitlab.com/dword4/nhlapi/-/blob/master/stats-api.md) 
+
+### Accessing the API’s
+From the NHL records API, I was able to franchise level information such as the number of wins and losses at home and on the road for all 38 NHL teams as well as team level information such as the number of goals made by each player on the team. 
+
+I had a lot harder time with the NHL stats API. We were asked to get team level information for eight different modifiers, such as the active team roster, details of the last game played, team roster for a specific season, etc.  Some of these eight modifiers did not return what I would have expected them to return. For example, one of the modifiers was the active team roster with less information, I would have expected this to return at least the names of the players but all I could get it to return was basic team information. There was very limited documentation on these API’s which made it more difficult. For the modifiers that did return information as expected, I had a hard time figuring out how to access the information. There was a data table within a data table with the information. At first, I tried positional references which worked fine for a couple of teams but then I’d tried another team and it would fail.  I still don’t think my way of accessing the information is robust. It worked for the 3-4 teams I tried but I am not sure it will work for all the teams. 
+
+The next step in the project was exploratory data analysis. I do not know much about hockey, and so I was unsure of what some of the columns meant. This made data analysis a little harder. To help me with the data analysis part, I read a very brief article on hockey which seemed to help a little. 
+
+### Exploratory Data Analysis 
+The questions I chose to look at were and my findings:
+
+•	Is it true that teams tend to win more at home compared to on the road?
+  + I found that teams do tend to win more at home compared to on the road.
+•	Are more aggressive teams more likely than average to win games?
+  + Teams with more penalty minutes tended to win more games
+•	How many seasons do the Carolina Hurricanes keep their players?
+  + Most players only play for a couple of seasons
+•	What positions on the Carolina Hurricanes spend the most time in the penalty box?
+  + Right Wing players had the highest penalty minutes
+•	Are teams that have played more games more likely to win?
+  + Teams that have played greater than 2000 games tend to have more than the average number of wins. 
+•	Is there a relationship between the number of goals scored and number of assists for the Carolina Hurricanes?
+  + I found a positive correlation between these 2 variables. 
+•	The Carolina Hurricanes won the Stanley Cup in 2006 against the Edmonton Oilers. I looked at the players on the team during the 2005- 2006 season and compared on number of goals, number of games played, and penalty minutes. 
+  + The centers on the Hurricanes had a higher median number of goals than the centers on the Oilers.
+  + The Hurricanes had more experienced centers and defenseman while the Oiler had more experienced right wing and left wing players. 
+  + The median penalty minutes for left wing players on the Oilers were well above the Hurricanes left wing players. 
+
+## Reflection
+I found this a challenging project. I think the most difficult part for me was accessing the NHL stats API as described previously. Another thing I struggled with was thinking of things to explore with the data. I don’t know that much about hockey and so had a hard thing thinking of plots and tables to make. 
+If I were to do this project over again, I think I would try to plan it out a bit better. At first, I tried to jump right in to writing the functions to access the data. I got a whole lot of errors and it did not work. So, then I decided to just try to access each one individually then combine them into a function which worked better for me. I had to search a lot of the errors to see what I was doing wrong.
+Another problem I ran into was that the .md document would not show the table of contents. RStudio never gave me an error. The html output document did have a table of contents. After some searching on the internet, I found that I had to update Pandoc. I updated it and that solved my problem. 
+My main take away from this project is that I need to plan my time better. I knew that I would not be able to work on this project this week due to other obligations and so I tried to get it done in the first week. I think for me, I need to allocate a set time and stop when that time is up. I would hit an error and start going down a rabbit hour, then an hour later I was in the same spot. I feel like I wasted a lot of time.   I think if I had just stopped, done something else then came back to the part I was having problems with, I would have been better off.  I tend to get really frustrated when something does not work and have a hard time moving on until I can figure out what I did wrong. 
+Also, I wish RStudio had a spell check. I think in the future I will type things in word then copy and paste them into RStudio so that I don’t make so many dumb spelling and grammatical errors. 
+
+## Link to my Project
+You can access my project [here](https://colleenmoore.github.io/ST558-HockeyProject/)
